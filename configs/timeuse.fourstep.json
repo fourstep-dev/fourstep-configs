@@ -2,7 +2,7 @@
     "version": 1,
     "ts": 1655143472,
     "server": {
-        "connectUrl": "https://emission-app.fourstep.dev/api/",
+        "connectUrl": "https://emission-app.fourstep.dev/",
         "aggregate_call_auth": "user_only"
     },
     "intro": {
