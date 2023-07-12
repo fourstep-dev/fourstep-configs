@@ -1,21 +1,21 @@
 {
     "version": 1,
-    "ts": 1655143472,
+    "ts": 1689138715,
     "server": {
         "connectUrl": "https://emission-app.fourstep.dev/",
         "aggregate_call_auth": "user_only"
     },
     "intro": {
         "program_or_study": "program",
-        "start_month": "9",
-        "start_year": "2020",
+        "start_month": "7",
+        "start_year": "2023",
         "mode_studied": "e-bike",
-        "program_admin_contact": "A. Raei (k.shankari@nrel.gov)",
+        "program_admin_contact": "rCITI (rciti.survey@unsw.edu.au)",
         "deployment_partner_name": "Fourstep",
         "translated_text": {
             "en": {
                 "deployment_partner_name": "Fourstep",
-                "deployment_name": "Staging environment for testing time use only",
+                "deployment_name": "Time use program",
                 "summary_line_1": "allows real-world testing of the app in time use mode",
                 "summary_line_2": "before pushing changes to production",
                 "summary_line_3": "without any guarantees about retaining data",
@@ -24,7 +24,7 @@
                 "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
             },
             "es": {
-                "deployment_partner_name": "Laboratorio Nacional de Energías Renovables (NREL)",
+                "deployment_partner_name": "Fourstep",
                 "deployment_name": "Entorno de ensayo solo para uso del tiempo de prueba",
                 "summary_line_1": "permite realizar pruebas en el mundo real de la aplicación en modo de uso del tiempo",
                 "summary_line_2": "antes de impulsar cambios en la producción",
