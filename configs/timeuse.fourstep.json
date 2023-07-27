@@ -69,7 +69,7 @@
           }
         },
         "TimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/timeuse-survey-form.json",
+          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/time-use-survey-form-v9.json",
           "version": 9,
           "compatibleWith": 1,
           "labelVars": {
