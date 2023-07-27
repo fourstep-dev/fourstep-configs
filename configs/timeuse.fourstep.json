@@ -74,32 +74,32 @@
           "compatibleWith": 1,
           "labelVars": {
             "pca": {
-              "key": "Personal_Care_activities",
+              "key": "personal_care",
               "type": "length"
             },
             "erea": {
-              "key": "Employment_related_a_Education_activities",
+              "key": "employment_and_educational",
               "type": "length"
             },
             "da": {
-              "key": "Domestic_activities",
+              "key": "maintenance",
               "type": "length"
             },
             "ral": {
-              "key": "Recreation_and_leisure",
+              "key": "recreation_and_leisure",
               "type": "length"
             },
             "vwaca": {
-              "key": "Voluntary_work_and_care_activities",
+              "key": "voluntary_work_and_care",
               "type": "length"
             },
             "other": {
-              "key": "Other",
+              "key": "other",
               "type": "length"
             }
           },
           "labelTemplate": {
-            "en": "{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Domestic, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
+            "en": "{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
             "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
           }
         }
