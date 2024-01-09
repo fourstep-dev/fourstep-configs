@@ -73,6 +73,10 @@
           "version": 9,
           "compatibleWith": 1,
           "labelVars": {
+            "ccoa": {
+              "key": "caring_children_or_adults",
+              "type": "length"
+            },
             "pca": {
               "key": "personal_care",
               "type": "length"
@@ -99,7 +103,7 @@
             }
           },
           "labelTemplate": {
-            "en": "{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
+            "en": "{ ccoa, plural, =0 {} other {# Caring, }}{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
             "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
           }
         }
