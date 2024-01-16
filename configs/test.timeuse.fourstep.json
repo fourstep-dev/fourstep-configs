@@ -69,7 +69,7 @@
           }
         },
         "TripTimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/place-time-use.json",
+          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-time-use.json",
           "version": 1,
           "compatibleWith": 1,
           "labelVars": {
@@ -108,7 +108,7 @@
           }
         },
         "PlaceTimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-time-use.json",
+          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/place-time-use.json",
           "version": 1,
           "compatibleWith": 1,
           "labelVars": {
