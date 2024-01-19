@@ -137,9 +137,8 @@
                     }
                 },
                 "labelTemplate": {
-                    "en": "{ ccoa, plural, =0 {} other {# Caring, }}{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
-                    "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
-                }
+                    "en": "{ sm, plural, =0 {} other {# Social Media, }}{ r, plural, =0 {} other {# Reading, }}{ ce, plural, =0 {} other {# Checking Emails, }}{ m, plural, =0 {} other {# Music, }}{ pg, plural, =0 {} other {# Play Video Game, }}{ wm, plural, =0 {} other {# Watching Movie, }}{ lae, plural, =0 {} other {# Learning and Educational, }}{ p, plural, =0 {} other {# Phone, }}{ ttp, plural, =0 {} other {# Talk to Passengers, }}{ wd, plural, =0 {} other {# Walking Dog, }}{ e, plural, =0 {} other {# Exercising, }}{ s, plural, =0 {} other {# Sleeping, }}{ na, plural, =0 {} other {# No Activity, }}{ o, plural, =0 {} other {# Other} }"
+                }                
             },
             "PlaceTimeUseSurvey": {
                 "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/place-time-use.json",
