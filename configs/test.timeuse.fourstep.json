@@ -21,7 +21,10 @@
                 "summary_line_3": "without any guarantees about retaining data",
                 "short_textual_description": "Dev-ops best practices involve setting up a staging environment to test changes in the real world before they are pushed out to production. This environment is designed for use with staging or beta versions of the OpenPATH. NREL makes no guarantees about data retention on this environment. Please use the Open Access environment to understand your carbon footprint.",
                 "why_we_collect": "To ensure that the end-to-end system works properly on a variety of real-world phones",
-                "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
+                "research_questions": [
+                    "Comparing the open-access group (no intervention) and programs that provide interventions.",
+                    "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Fourstep",
@@ -32,138 +35,112 @@
                 "short_textual_description": "Las mejores prácticas de Dev-ops implican configurar un entorno de prueba para probar los cambios en el mundo real antes de que se envíen a producción. Este entorno está diseñado para usarse con versiones provisionales o beta de OpenPATH. NREL no garantiza la retención de datos en este entorno. Utilice el entorno de acceso abierto para comprender su huella de carbono.",
                 "why_we_collect_es": "Para garantizar que el sistema de extremo a extremo funcione correctamente en una variedad de teléfonos del mundo real",
                 "why_we_collect": "Para garantizar que el sistema de extremo a extremo funcione correctamente en una variedad de teléfonos del mundo real",
-                "research_questions": ["Comparando el grupo de acceso abierto (sin intervención) y los uso del tiempo que brindan intervenciones.", "Monitoreo general de las tendencias de movilidad para el comportamiento de viaje, incluidos los cambios en el comportamiento de viaje y la introducción de nuevos modos de movilidad."]
+                "research_questions": [
+                    "Comparando el grupo de acceso abierto (sin intervención) y los uso del tiempo que brindan intervenciones.",
+                    "Monitoreo general de las tendencias de movilidad para el comportamiento de viaje, incluidos los cambios en el comportamiento de viaje y la introducción de nuevos modos de movilidad."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "TripConfirmSurvey": {
-          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-confirm-survey-multiple-select.json",
-          "version": 1.2,
-          "compatibleWith": 1,
-          "dataKey": "manual/trip_user_input",
-          "labelVars": {
-            "modes": {
-              "key": "travel_mode",
-              "type": "length"
+        "surveys": {
+            "TripConfirmSurvey": {
+                "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-confirm-survey-multiple-select.json",
+                "version": 1.2,
+                "compatibleWith": 1,
+                "dataKey": "manual/trip_user_input",
+                "labelVars": {
+                    "modes": {
+                        "key": "travel_mode",
+                        "type": "length"
+                    },
+                    "purposes": {
+                        "key": "destination_purpose",
+                        "type": "length"
+                    }
+                },
+                "labelTemplate": {
+                    "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
+                    "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
+                }
             },
-            "purposes": {
-              "key": "destination_purpose",
-              "type": "length"
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            },
+            "TripTimeUseSurvey": {
+                "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-time-use.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "labelVars": {
+                    "ccoa": {
+                        "key": "caring_children_or_adults",
+                        "type": "length"
+                    },
+                    "pca": {
+                        "key": "personal_care",
+                        "type": "length"
+                    },
+                    "erea": {
+                        "key": "employment_and_educational",
+                        "type": "length"
+                    },
+                    "da": {
+                        "key": "maintenance",
+                        "type": "length"
+                    },
+                    "ral": {
+                        "key": "recreation_and_leisure",
+                        "type": "length"
+                    },
+                    "vwaca": {
+                        "key": "voluntary_work_and_care",
+                        "type": "length"
+                    },
+                    "other": {
+                        "key": "other",
+                        "type": "length"
+                    }
+                },
+                "labelTemplate": {
+                    "en": "{ ccoa, plural, =0 {} other {# Caring, }}{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
+                    "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
+                }
+            },
+            "PlaceTimeUseSurvey": {
+                "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/place-time-use.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "labelVars": {},
+                "labelTemplate": {
+                    "en": "{ ccoa, plural, =0 {} other {# Caring, }}{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
+                    "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
+                }
             }
-          },
-          "labelTemplate": {
-            "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
-            "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
-          }
         },
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        },
-        "TripTimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-time-use.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "labelVars": {
-            "ccoa": {
-              "key": "caring_children_or_adults",
-              "type": "length"
+        "buttons": {
+            "trip-notes": {
+                "surveyName": "TripTimeUseSurvey",
+                "not-filled-in-label": {
+                    "en": "Add Activity",
+                    "es": "Añadir actividad"
+                }
             },
-            "pca": {
-              "key": "personal_care",
-              "type": "length"
-            },
-            "erea": {
-              "key": "employment_and_educational",
-              "type": "length"
-            },
-            "da": {
-              "key": "maintenance",
-              "type": "length"
-            },
-            "ral": {
-              "key": "recreation_and_leisure",
-              "type": "length"
-            },
-            "vwaca": {
-              "key": "voluntary_work_and_care",
-              "type": "length"
-            },
-            "other": {
-              "key": "other",
-              "type": "length"
+            "place-notes": {
+                "surveyName": "PlaceTimeUseSurvey",
+                "not-filled-in-label": {
+                    "en": "Add Activity",
+                    "es": "Añadir actividad"
+                }
             }
-          },
-          "labelTemplate": {
-            "en": "{ ccoa, plural, =0 {} other {# Caring, }}{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
-            "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
-          }
         },
-        "PlaceTimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/place-time-use.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "labelVars": {
-            "ccoa": {
-              "key": "caring_children_or_adults",
-              "type": "length"
-            },
-            "pca": {
-              "key": "personal_care",
-              "type": "length"
-            },
-            "erea": {
-              "key": "employment_and_educational",
-              "type": "length"
-            },
-            "da": {
-              "key": "maintenance",
-              "type": "length"
-            },
-            "ral": {
-              "key": "recreation_and_leisure",
-              "type": "length"
-            },
-            "vwaca": {
-              "key": "voluntary_work_and_care",
-              "type": "length"
-            },
-            "other": {
-              "key": "other",
-              "type": "length"
-            }
-          },
-          "labelTemplate": {
-            "en": "{ ccoa, plural, =0 {} other {# Caring, }}{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
-            "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
-          }
-        }
-      },
-      "buttons": {
-        "trip-notes": {
-          "surveyName": "TripTimeUseSurvey",
-          "not-filled-in-label": {
-            "en": "Add Activity",
-            "es": "Añadir actividad"
-          }
-        },
-        "place-notes": {
-          "surveyName": "PlaceTimeUseSurvey",
-          "not-filled-in-label": {
-            "en": "Add Activity",
-            "es": "Añadir actividad"
-          }
-        }
-      },
-      "trip-labels": "ENKETO"
+        "trip-labels": "ENKETO"
     },
     "reminderSchemes": {
         "weekly": {
@@ -176,8 +153,16 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                {
+                    "start": 0,
+                    "end": 1,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 3,
+                    "end": 5,
+                    "intervalInDays": 2
+                }
             ],
             "defaultTime": "21:00"
         },
@@ -191,8 +176,16 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                {
+                    "start": 0,
+                    "end": 1,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 3,
+                    "end": 5,
+                    "intervalInDays": 2
+                }
             ],
             "defaultTime": "22:00"
         },
@@ -206,8 +199,16 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                {
+                    "start": 0,
+                    "end": 1,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 3,
+                    "end": 5,
+                    "intervalInDays": 2
+                }
             ],
             "defaultTime": "23:00"
         }
