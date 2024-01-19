@@ -79,31 +79,59 @@
                 "version": 1,
                 "compatibleWith": 1,
                 "labelVars": {
-                    "ccoa": {
-                        "key": "caring_children_or_adults",
+                    "sm": {
+                        "key": "social_media",
                         "type": "length"
                     },
-                    "pca": {
-                        "key": "personal_care",
+                    "r": {
+                        "key": "reading",
                         "type": "length"
                     },
-                    "erea": {
-                        "key": "employment_and_educational",
+                    "ce": {
+                        "key": "checking_emails",
                         "type": "length"
                     },
-                    "da": {
-                        "key": "maintenance",
+                    "m": {
+                        "key": "music",
                         "type": "length"
                     },
-                    "ral": {
-                        "key": "recreation_and_leisure",
+                    "pg": {
+                        "key": "play_game",
                         "type": "length"
                     },
-                    "vwaca": {
-                        "key": "voluntary_work_and_care",
+                    "wm": {
+                        "key": "watching_movie",
                         "type": "length"
                     },
-                    "other": {
+                    "lae": {
+                        "key": "learning_and_educational",
+                        "type": "length"
+                    },
+                    "p": {
+                        "key": "phone",
+                        "type": "length"
+                    },
+                    "ttp": {
+                        "key": "talk_to_passengers",
+                        "type": "length"
+                    },
+                    "wd": {
+                        "key": "walking_dog",
+                        "type": "length"
+                    },
+                    "e": {
+                        "key": "exercising",
+                        "type": "length"
+                    },
+                    "s": {
+                        "key": "sleeping",
+                        "type": "length"
+                    },
+                    "na": {
+                        "key": "no_activity",
+                        "type": "length"
+                    },
+                    "o": {
                         "key": "other",
                         "type": "length"
                     }
