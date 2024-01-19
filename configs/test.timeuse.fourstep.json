@@ -117,7 +117,204 @@
                 "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/place-time-use.json",
                 "version": 1,
                 "compatibleWith": 1,
-                "labelVars": {},
+                "labelVars": {
+                    "cac": {
+                        "key": "children_adult_caring",
+                        "type": "length"
+                    },
+                    "sm": {
+                        "key": "social_media",
+                        "type": "length"
+                    },
+                    "c": {
+                        "key": "cleaning",
+                        "type": "length"
+                    },
+                    "cf": {
+                        "key": "contact",
+                        "type": "length"
+                    },
+                    "la": {
+                        "key": "laundry",
+                        "type": "length"
+                    },
+                    "he": {
+                        "key": "home_eating",
+                        "type": "length"
+                    },
+                    "ex": {
+                        "key": "exercising",
+                        "type": "length"
+                    },
+                    "me": {
+                        "key": "meditation",
+                        "type": "length"
+                    },
+                    "ogs": {
+                        "key": "online_grocery_shopping",
+                        "type": "length"
+                    },
+                    "oos": {
+                        "key": "online_other_shopping",
+                        "type": "length"
+                    },
+                    "b": {
+                        "key": "bills",
+                        "type": "length"
+                    },
+                    "ph": {
+                        "key": "personal_hygiene",
+                        "type": "length"
+                    },
+                    "pc": {
+                        "key": "pet_caring",
+                        "type": "length"
+                    },
+                    "pvg": {
+                        "key": "play_video_game",
+                        "type": "length"
+                    },
+                    "mp": {
+                        "key": "meal_preparation",
+                        "type": "length"
+                    },
+                    "rb": {
+                        "key": "reading_book",
+                        "type": "length"
+                    },
+                    "rag": {
+                        "key": "repairing_and_gardening",
+                        "type": "length"
+                    },
+                    "sl": {
+                        "key": "sleeping",
+                        "type": "length"
+                    },
+                    "sfu": {
+                        "key": "studying_for_uni",
+                        "type": "length"
+                    },
+                    "wmj": {
+                        "key": "wfh_main_job",
+                        "type": "length"
+                    },
+                    "woj": {
+                        "key": "wfh_other_job",
+                        "type": "length"
+                    },
+                    "wt": {
+                        "key": "watching_tv",
+                        "type": "length"
+                    },
+                    "hna": {
+                        "key": "home_no_activity",
+                        "type": "length"
+                    },
+                    "ho": {
+                        "key": "home_other",
+                        "type": "length"
+                    },
+                    "mj": {
+                        "key": "main_job",
+                        "type": "length"
+                    },
+                    "oj": {
+                        "key": "other_job",
+                        "type": "length"
+                    },
+                    "ed": {
+                        "key": "educational",
+                        "type": "length"
+                    },
+                    "we": {
+                        "key": "work_eating",
+                        "type": "length"
+                    },
+                    "so": {
+                        "key": "socialising",
+                        "type": "length"
+                    },
+                    "wna": {
+                        "key": "work_no_activity",
+                        "type": "length"
+                    },
+                    "wo": {
+                        "key": "work_other",
+                        "type": "length"
+                    },
+                    "gs": {
+                        "key": "grocery_shopping",
+                        "type": "length"
+                    },
+                    "os": {
+                        "key": "other_shopping",
+                        "type": "length"
+                    },
+                    "swf": {
+                        "key": "socialising_with_friends",
+                        "type": "length"
+                    },
+                    "orb": {
+                        "key": "other_reading_book",
+                        "type": "length"
+                    },
+                    "eo": {
+                        "key": "eating_out",
+                        "type": "length"
+                    },
+                    "oe": {
+                        "key": "other_exercising",
+                        "type": "length"
+                    },
+                    "pec": {
+                        "key": "personal_care",
+                        "type": "length"
+                    },
+                    "opc": {
+                        "key": "other_pet_caring",
+                        "type": "length"
+                    },
+                    "opg": {
+                        "key": "other_play_game",
+                        "type": "length"
+                    },
+                    "cc": {
+                        "key": "caring_children",
+                        "type": "length"
+                    },
+                    "stf": {
+                        "key": "spending_time_family",
+                        "type": "length"
+                    },
+                    "vw": {
+                        "key": "voluntary_work",
+                        "type": "length"
+                    },
+                    "ac": {
+                        "key": "attending_class",
+                        "type": "length"
+                    },
+                    "pb": {
+                        "key": "personal_business",
+                        "type": "length"
+                    },
+                    "pso": {
+                        "key": "pickup_someone",
+                        "type": "length"
+                    },
+                    "pst": {
+                        "key": "pickup_something",
+                        "type": "length"
+                    },
+                    "ona": {
+                        "key": "other_no_activity",
+                        "type": "length"
+                    },
+                    "oo": {
+                        "key": "other_other",
+                        "type": "length"
+                    }
+                },
                 "labelTemplate": {
                     "en": "{ ccoa, plural, =0 {} other {# Caring, }}{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
                     "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
