@@ -81,59 +81,73 @@
                 "labelVars": {
                     "sm": {
                         "key": "social_media",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Social Media"
                     },
                     "r": {
                         "key": "reading",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Reading"
                     },
                     "ce": {
                         "key": "checking_emails",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Checking Emails"
                     },
                     "m": {
                         "key": "music",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Music"
                     },
                     "pg": {
                         "key": "play_game",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Play Video Game"
                     },
                     "wm": {
                         "key": "watching_movie",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Watching Movie"
                     },
                     "lae": {
                         "key": "learning_and_educational",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Learning and Educational"
                     },
                     "p": {
                         "key": "phone",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Phone"
                     },
                     "ttp": {
                         "key": "talk_to_passengers",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Talk to Passengers"
                     },
                     "wd": {
                         "key": "walking_dog",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Walking Dog"
                     },
                     "e": {
                         "key": "exercising",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Exercising"
                     },
                     "s": {
                         "key": "sleeping",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Sleeping"
                     },
                     "na": {
                         "key": "no_activity",
-                        "type": "length"
+                        "type": "length",
+                        "label": "No Activity"
                     },
                     "o": {
                         "key": "other",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other"
                     }
                 },
                 "labelTemplate": {
@@ -147,199 +161,248 @@
                 "labelVars": {
                     "cac": {
                         "key": "children_adult_caring",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Caring"
                     },
                     "sm": {
                         "key": "social_media",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Social Media"
                     },
                     "c": {
                         "key": "cleaning",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Cleaning"
                     },
                     "cf": {
                         "key": "contact",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Contact"
                     },
                     "la": {
                         "key": "laundry",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Laundry"
                     },
                     "he": {
                         "key": "home_eating",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Home-Eating"
                     },
                     "ex": {
                         "key": "exercising",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Exercising"
                     },
                     "me": {
                         "key": "meditation",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Meditation"
                     },
                     "ogs": {
                         "key": "online_grocery_shopping",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Online Grocery Shopping"
                     },
                     "oos": {
                         "key": "online_other_shopping",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Online Other Shopping"
                     },
                     "b": {
                         "key": "bills",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Bills"
                     },
                     "ph": {
                         "key": "personal_hygiene",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Personal Hygiene"
                     },
                     "pc": {
                         "key": "pet_caring",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Pet Caring"
                     },
                     "pvg": {
                         "key": "play_video_game",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Play Video Game"
                     },
                     "mp": {
                         "key": "meal_preparation",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Meal Preparation"
                     },
                     "rb": {
                         "key": "reading_book",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Reading Book"
                     },
                     "rag": {
                         "key": "repairing_and_gardening",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Repairing and Gardening"
                     },
                     "sl": {
                         "key": "sleeping",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Sleeping"
                     },
                     "sfu": {
                         "key": "studying_for_uni",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Studying for Uni"
                     },
                     "wmj": {
                         "key": "wfh_main_job",
-                        "type": "length"
+                        "type": "length",
+                        "label": "WFH Main Job"
                     },
                     "woj": {
                         "key": "wfh_other_job",
-                        "type": "length"
+                        "type": "length",
+                        "label": "WFH Other Job"
                     },
                     "wt": {
                         "key": "watching_tv",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Watching TV"
                     },
                     "hna": {
                         "key": "home_no_activity",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Home No Activity"
                     },
                     "ho": {
                         "key": "home_other",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Home Other"
                     },
                     "mj": {
                         "key": "main_job",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Main Job"
                     },
                     "oj": {
                         "key": "other_job",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other Job"
                     },
                     "ed": {
                         "key": "educational",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Educational"
                     },
                     "we": {
                         "key": "work_eating",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Work-Eating"
                     },
                     "so": {
                         "key": "socialising",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Socialising"
                     },
                     "wna": {
                         "key": "work_no_activity",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Work No Activity"
                     },
                     "wo": {
                         "key": "work_other",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Work-Other"
                     },
                     "gs": {
                         "key": "grocery_shopping",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Grocery Shopping"
                     },
                     "os": {
                         "key": "other_shopping",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other Shopping"
                     },
                     "swf": {
                         "key": "socialising_with_friends",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Socialising with Friends"
                     },
                     "orb": {
                         "key": "other_reading_book",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other-Reading Book"
                     },
                     "eo": {
                         "key": "eating_out",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Eating Out"
                     },
                     "oe": {
                         "key": "other_exercising",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other-Exercising"
                     },
                     "pec": {
                         "key": "personal_care",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Personal Care"
                     },
                     "opc": {
                         "key": "other_pet_caring",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other Pet Caring"
                     },
                     "opg": {
                         "key": "other_play_game",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other-Play Game"
                     },
                     "cc": {
                         "key": "caring_children",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Caring for Children"
                     },
                     "stf": {
                         "key": "spending_time_family",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Spending Time with Family"
                     },
                     "vw": {
                         "key": "voluntary_work",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Voluntary Work"
                     },
                     "ac": {
                         "key": "attending_class",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Attending Class"
                     },
                     "pb": {
                         "key": "personal_business",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Personal Business"
                     },
                     "pso": {
                         "key": "pickup_someone",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Pickup Someone"
                     },
                     "pst": {
                         "key": "pickup_something",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Pickup Something"
                     },
                     "ona": {
                         "key": "other_no_activity",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other-No Activity"
                     },
                     "oo": {
                         "key": "other_other",
-                        "type": "length"
+                        "type": "length",
+                        "label": "Other-Other"
                     }
                 },
                 "labelTemplate": {
