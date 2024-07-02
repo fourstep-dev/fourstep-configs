@@ -424,6 +424,13 @@
           "en": "Add Activity",
           "es": "Añadir actividad"
         }
+      },
+      "trip-label": {
+        "surveyName": "TripConfirmSurvey",
+        "not-filled-in-label": {
+          "en": "Add Trip Details",
+          "es": "Añadir viaje"
+        }
       }
     },
     "trip-labels": "ENKETO"
