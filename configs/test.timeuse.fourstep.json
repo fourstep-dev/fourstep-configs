@@ -15,20 +15,20 @@
     "translated_text": {
       "en": {
         "deployment_partner_name": "Fourstep",
-        "deployment_name": "Time use program",
-        "summary_line_1": "allows real-world testing of the app in time use mode",
-        "summary_line_2": "before pushing changes to production",
-        "summary_line_3": "without any guarantees about retaining data",
-        "short_textual_description": "Dev-ops best practices involve setting up a staging environment to test changes in the real world before they are pushed out to production. This environment is designed for use with staging or beta versions of the OpenPATH. NREL makes no guarantees about data retention on this environment. Please use the Open Access environment to understand your carbon footprint.",
-        "why_we_collect": "To ensure that the end-to-end system works properly on a variety of real-world phones",
+        "deployment_name": "Time-use Program",
+        "summary_line_1": "Collecting time-use data through travel diaries",
+        "summary_line_2": "Providing valuable insights into travel behavior, patterns, and preferences.",
+        "summary_line_3": "This data helps researchers and policymakers understand how individuals allocate their time for various activities",
+        "short_textual_description": "Collecting time-use data in travel diaries is an essential aspect of transport research, providing valuable insights into travel behavior, patterns, and preferences. This data helps researchers and policymakers understand how individuals allocate their time for various activities, including travel, and how different factors influence these choices.",
+        "why_we_collect": "This data offers comprehensive insights into how individuals allocate their time to different activities, providing a deeper understanding of human behavior, societal trends, and resource utilization.",
         "research_questions": [
-          "Comparing the open-access group (no intervention) and programs that provide interventions.",
-          "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."
+          "How do individuals allocate their time to different modes of transportation (e.g., walking, cycling, driving, public transit)?",
+          "What are the primary purposes of trips (e.g., work, education, shopping, leisure) and how do these purposes influence travel time and mode choice?"
         ]
       },
       "es": {
         "deployment_partner_name": "Fourstep",
-        "deployment_name": "Entorno de ensayo solo para uso del tiempo de prueba",
+        "deployment_name": "Time-use Program",
         "summary_line_1": "permite realizar pruebas en el mundo real de la aplicación en modo de uso del tiempo",
         "summary_line_2": "antes de impulsar cambios en la producción",
         "summary_line_3": "sin ninguna garantía sobre la retención de datos",
