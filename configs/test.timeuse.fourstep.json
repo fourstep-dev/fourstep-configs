@@ -186,257 +186,402 @@
       },
       "PlaceTimeUseSurvey": {
         "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/place-time-use-ok-removed.json",
-        "version": 1,
+        "version": 1.1,
         "compatibleWith": 1,
         "labelVars": {
-          "cac": {
-            "key": "children_adult_caring",
+          "hed": {
+            "key": "h_eating",
             "type": "length",
-            "label": "Caring"
+            "label": "Eating/Drinking"
           },
-          "sm": {
-            "key": "social_media",
-            "type": "length",
-            "label": "Social Media"
-          },
-          "c": {
-            "key": "cleaning",
-            "type": "length",
-            "label": "Cleaning"
-          },
-          "cf": {
-            "key": "contact",
-            "type": "length",
-            "label": "Contact"
-          },
-          "la": {
-            "key": "laundry",
-            "type": "length",
-            "label": "Laundry"
-          },
-          "he": {
-            "key": "home_eating",
-            "type": "length",
-            "label": "Home-Eating"
-          },
-          "ex": {
-            "key": "exercising",
-            "type": "length",
-            "label": "Exercising"
-          },
-          "me": {
-            "key": "meditation",
-            "type": "length",
-            "label": "Meditation"
-          },
-          "ogs": {
-            "key": "online_grocery_shopping",
-            "type": "length",
-            "label": "Online Grocery Shopping"
-          },
-          "oos": {
-            "key": "online_other_shopping",
-            "type": "length",
-            "label": "Online Other Shopping"
-          },
-          "b": {
-            "key": "bills",
-            "type": "length",
-            "label": "Bills"
-          },
-          "ph": {
-            "key": "personal_hygiene",
+          "hph": {
+            "key": "h_personal_hygiene",
             "type": "length",
             "label": "Personal Hygiene"
           },
-          "pc": {
-            "key": "pet_caring",
-            "type": "length",
-            "label": "Pet Caring"
-          },
-          "pvg": {
-            "key": "play_video_game",
-            "type": "length",
-            "label": "Play Video Game"
-          },
-          "mp": {
-            "key": "meal_preparation",
-            "type": "length",
-            "label": "Meal Preparation"
-          },
-          "rb": {
-            "key": "reading_book",
-            "type": "length",
-            "label": "Reading Book"
-          },
-          "rag": {
-            "key": "repairing_and_gardening",
-            "type": "length",
-            "label": "Repairing and Gardening"
-          },
-          "sl": {
-            "key": "sleeping",
+          "hs": {
+            "key": "h_sleeping",
             "type": "length",
             "label": "Sleeping"
           },
-          "sfu": {
-            "key": "studying_for_uni",
+          "hm": {
+            "key": "h_meditation",
             "type": "length",
-            "label": "Studying for Uni"
+            "label": "Meditation"
           },
-          "wmj": {
-            "key": "wfh_main_job",
+          "heh": {
+            "key": "h_exercising",
+            "type": "length",
+            "label": "Sport at Home"
+          },
+          "hopc": {
+            "key": "h_other_personal_care",
+            "type": "length",
+            "label": "Other Personal Care"
+          },
+          "hlc": {
+            "key": "h_laundry",
+            "type": "length",
+            "label": "Laundry/Clothes Care"
+          },
+          "hmp": {
+            "key": "h_meal_preparation",
+            "type": "length",
+            "label": "Food/Drink Prep"
+          },
+          "hog": {
+            "key": "h_online_grocery_shopping",
+            "type": "length",
+            "label": "Online Grocery Shopping"
+          },
+          "hoh": {
+            "key": "h_housework",
+            "type": "length",
+            "label": "Other Housework"
+          },
+          "hpc": {
+            "key": "h_pet_caring",
+            "type": "length",
+            "label": "Grounds/Animal Care"
+          },
+          "hhm": {
+            "key": "h_house_maintenance",
+            "type": "length",
+            "label": "House Maintenance"
+          },
+          "hhmgt": {
+            "key": "h_hh_management",
+            "type": "length",
+            "label": "Household Management"
+          },
+          "hcac": {
+            "key": "h_children_adult_caring",
+            "type": "length",
+            "label": "Caring Children/Adults"
+          },
+          "hvw": {
+            "key": "h_voluntary_work",
+            "type": "length",
+            "label": "Voluntary Work/Caring"
+          },
+          "hcf": {
+            "key": "h_contact",
+            "type": "length",
+            "label": "Contact Family/Friends"
+          },
+          "hcip": {
+            "key": "h_contact_inperson",
+            "type": "length",
+            "label": "In-Person Socialising"
+          },
+          "hwt": {
+            "key": "h_watching_tv",
+            "type": "length",
+            "label": "Watching TV/Netflix"
+          },
+          "hsm": {
+            "key": "h_social_media",
+            "type": "length",
+            "label": "Social Media"
+          },
+          "hvg": {
+            "key": "h_play_video_game",
+            "type": "length",
+            "label": "Video Games"
+          },
+          "hl": {
+            "key": "h_listening",
+            "type": "length",
+            "label": "Listening to Podcasts"
+          },
+          "hobh": {
+            "key": "h_hobbies",
+            "type": "length",
+            "label": "Other Games/Hobbies"
+          },
+          "hrb": {
+            "key": "h_reading_book",
+            "type": "length",
+            "label": "Reading Book"
+          },
+          "hoel": {
+            "key": "h_online_edu_leisure",
+            "type": "length",
+            "label": "Online Edu Leisure"
+          },
+          "hoos": {
+            "key": "h_online_other_shopping",
+            "type": "length",
+            "label": "Online Other Shopping"
+          },
+          "hft": {
+            "key": "h_free_time",
+            "type": "length",
+            "label": "Other Free Time"
+          },
+          "hoe": {
+            "key": "h_online_edu",
+            "type": "length",
+            "label": "Online Edu"
+          },
+          "hsu": {
+            "key": "h_studying_for_uni",
+            "type": "length",
+            "label": "Study for Uni"
+          },
+          "hwmj": {
+            "key": "h_wfh_main_job",
             "type": "length",
             "label": "WFH Main Job"
           },
-          "woj": {
-            "key": "wfh_other_job",
+          "hwoj": {
+            "key": "h_wfh_other_job",
             "type": "length",
             "label": "WFH Other Job"
           },
-          "wt": {
-            "key": "watching_tv",
+          "hwo": {
+            "key": "h_wfh_other",
             "type": "length",
-            "label": "Watching TV"
+            "label": "WFH Other"
           },
           "hna": {
-            "key": "home_no_activity",
+            "key": "h_no_activity",
             "type": "length",
-            "label": "Home No Activity"
+            "label": "Just Relaxing"
           },
-          "ho": {
-            "key": "home_other",
+          "hot": {
+            "key": "h_other",
             "type": "length",
-            "label": "Home Other"
+            "label": "Other"
           },
-          "mj": {
-            "key": "main_job",
+          "wmj": {
+            "key": "w_main_job",
             "type": "length",
             "label": "Main Job"
           },
-          "oj": {
-            "key": "other_job",
+          "woj": {
+            "key": "w_other_job",
             "type": "length",
             "label": "Other Job"
           },
-          "ed": {
-            "key": "educational",
-            "type": "length",
-            "label": "Educational"
-          },
           "we": {
-            "key": "work_eating",
+            "key": "w_edu",
             "type": "length",
-            "label": "Work-Eating"
+            "label": "Edu Courses"
           },
-          "so": {
-            "key": "socialising",
+          "wea": {
+            "key": "w_eating",
+            "type": "length",
+            "label": "Eating/Drinking"
+          },
+          "ws": {
+            "key": "w_socialising",
             "type": "length",
             "label": "Socialising"
           },
           "wna": {
-            "key": "work_no_activity",
+            "key": "w_no_activity",
             "type": "length",
-            "label": "Work No Activity"
+            "label": "Just Relaxing"
           },
           "wo": {
-            "key": "work_other",
+            "key": "w_other",
             "type": "length",
-            "label": "Work-Other"
+            "label": "Other"
           },
-          "gs": {
-            "key": "grocery_shopping",
+          "oea": {
+            "key": "o_eating",
+            "type": "length",
+            "label": "Eating/Drinking"
+          },
+          "oph": {
+            "key": "o_personal_hygiene",
+            "type": "length",
+            "label": "Personal Hygiene"
+          },
+          "os": {
+            "key": "o_sleeping",
+            "type": "length",
+            "label": "Sleeping"
+          },
+          "om": {
+            "key": "o_meditation",
+            "type": "length",
+            "label": "Meditation"
+          },
+          "oei": {
+            "key": "o_exercising",
+            "type": "length",
+            "label": "Indoor Sport"
+          },
+          "oopc": {
+            "key": "o_other_personal_care",
+            "type": "length",
+            "label": "Other Personal Care"
+          },
+          "olc": {
+            "key": "o_laundry",
+            "type": "length",
+            "label": "Laundry/Clothes Care"
+          },
+          "omp": {
+            "key": "o_meal_preparation",
+            "type": "length",
+            "label": "Food/Drink Prep"
+          },
+          "ogs": {
+            "key": "o_grocery_shopping",
             "type": "length",
             "label": "Grocery Shopping"
           },
-          "os": {
-            "key": "other_shopping",
+          "oogs": {
+            "key": "o_online_grocery_shopping",
+            "type": "length",
+            "label": "Online Grocery Shopping"
+          },
+          "opc": {
+            "key": "o_pet_caring",
+            "type": "length",
+            "label": "Grounds/Animal Care"
+          },
+          "ocac": {
+            "key": "o_children_adult_caring",
+            "type": "length",
+            "label": "Caring Children/Adults"
+          },
+          "ovw": {
+            "key": "o_voluntary_work",
+            "type": "length",
+            "label": "Voluntary Work/Caring"
+          },
+          "ocf": {
+            "key": "o_contact",
+            "type": "length",
+            "label": "Contact Family/Friends"
+          },
+          "ocip": {
+            "key": "o_contact_inperson",
+            "type": "length",
+            "label": "In-Person Socialising"
+          },
+          "owt": {
+            "key": "o_watching_tv",
+            "type": "length",
+            "label": "Watching TV/Netflix"
+          },
+          "osm": {
+            "key": "o_social_media",
+            "type": "length",
+            "label": "Checking Social Media"
+          },
+          "ovg": {
+            "key": "o_play_video_game",
+            "type": "length",
+            "label": "Play Video Games"
+          },
+          "ol": {
+            "key": "o_listening",
+            "type": "length",
+            "label": "Listening to Podcasts"
+          },
+          "ohob": {
+            "key": "o_hobbies",
+            "type": "length",
+            "label": "Games/Hobbies"
+          },
+          "oeo": {
+            "key": "o_eating_out",
+            "type": "length",
+            "label": "Eating Out/Drinking"
+          },
+          "oexo": {
+            "key": "o_exercising_outdoor",
+            "type": "length",
+            "label": "Sport/Outdoor Activity"
+          },
+          "orb": {
+            "key": "o_reading_book",
+            "type": "length",
+            "label": "Reading Book"
+          },
+          "oedu": {
+            "key": "o_edu_leisure",
+            "type": "length",
+            "label": "Edu Leisure"
+          },
+          "ooel": {
+            "key": "o_online_edu_leisure",
+            "type": "length",
+            "label": "Online Edu Leisure"
+          },
+          "oosh": {
+            "key": "o_other_shopping",
             "type": "length",
             "label": "Other Shopping"
           },
-          "swf": {
-            "key": "socialising_with_friends",
+          "ooosh": {
+            "key": "o_online_other_shopping",
             "type": "length",
-            "label": "Socialising with Friends"
+            "label": "Online Other Shopping"
           },
-          "orb": {
-            "key": "other_reading_book",
+          "oft": {
+            "key": "o_free_time",
             "type": "length",
-            "label": "Other-Reading Book"
+            "label": "Free Time"
           },
-          "eo": {
-            "key": "eating_out",
-            "type": "length",
-            "label": "Eating Out"
-          },
-          "oe": {
-            "key": "other_exercising",
-            "type": "length",
-            "label": "Other-Exercising"
-          },
-          "pec": {
-            "key": "personal_care",
-            "type": "length",
-            "label": "Personal Care"
-          },
-          "opc": {
-            "key": "other_pet_caring",
-            "type": "length",
-            "label": "Other Pet Caring"
-          },
-          "opg": {
-            "key": "other_play_game",
-            "type": "length",
-            "label": "Other-Play Game"
-          },
-          "cc": {
-            "key": "caring_children",
-            "type": "length",
-            "label": "Caring for Children"
-          },
-          "stf": {
-            "key": "spending_time_family",
-            "type": "length",
-            "label": "Spending Time with Family"
-          },
-          "vw": {
-            "key": "voluntary_work",
-            "type": "length",
-            "label": "Voluntary Work"
-          },
-          "ac": {
-            "key": "attending_class",
-            "type": "length",
-            "label": "Attending Class"
-          },
-          "pb": {
-            "key": "personal_business",
+          "opb": {
+            "key": "o_personal_business",
             "type": "length",
             "label": "Personal Business"
           },
-          "pso": {
-            "key": "pickup_someone",
+          "ops": {
+            "key": "o_pickup_someone",
             "type": "length",
-            "label": "Pickup Someone"
+            "label": "Pick Up Someone"
           },
-          "pst": {
-            "key": "pickup_something",
+          "opst": {
+            "key": "o_pickup_something",
             "type": "length",
-            "label": "Pickup Something"
+            "label": "Pick Up Something"
+          },
+          "ooe": {
+            "key": "o_online_edu",
+            "type": "length",
+            "label": "Online Edu"
+          },
+          "osu": {
+            "key": "o_studying_for_uni",
+            "type": "length",
+            "label": "Study for Uni"
+          },
+          "omj": {
+            "key": "o_main_job",
+            "type": "length",
+            "label": "Main Job"
+          },
+          "ooj": {
+            "key": "o_other_job",
+            "type": "length",
+            "label": "Other Job"
+          },
+          "owo": {
+            "key": "o_work_other",
+            "type": "length",
+            "label": "Other Employment"
           },
           "ona": {
-            "key": "other_no_activity",
+            "key": "o_no_activity",
             "type": "length",
-            "label": "Other-No Activity"
+            "label": "Just Relaxing"
           },
-          "oo": {
-            "key": "other_other",
+          "oot": {
+            "key": "o_other",
             "type": "length",
-            "label": "Other-Other"
+            "label": "Other"
           }
         },
         "labelTemplate": {
-          "en": "{ cac, plural, =0 {} other {# Caring, }}{ sm, plural, =0 {} other {# Social Media, }}{ c, plural, =0 {} other {# Cleaning, }}{ cf, plural, =0 {} other {# Contact, }}{ la, plural, =0 {} other {# Laundry, }}{ he, plural, =0 {} other {# Home-Eating, }}{ ex, plural, =0 {} other {# Exercising, }}{ me, plural, =0 {} other {# Meditation, }}{ ogs, plural, =0 {} other {# Online Grocery Shopping, }}{ oos, plural, =0 {} other {# Online Other Shopping, }}{ b, plural, =0 {} other {# Bills, }}{ ph, plural, =0 {} other {# Personal Hygiene, }}{ pc, plural, =0 {} other {# Pet Caring, }}{ pvg, plural, =0 {} other {# Play Video Game, }}{ mp, plural, =0 {} other {# Meal Preparation, }}{ rb, plural, =0 {} other {# Reading Book, }}{ rag, plural, =0 {} other {# Repairing and Gardening, }}{ sl, plural, =0 {} other {# Sleeping, }}{ sfu, plural, =0 {} other {# Studying for Uni, }}{ wmj, plural, =0 {} other {# WFH Main Job, }}{ woj, plural, =0 {} other {# WFH Other Job, }}{ wt, plural, =0 {} other {# Watching TV, }}{ hna, plural, =0 {} other {# Home No Activity, }}{ ho, plural, =0 {} other {# Home Other, }}{ mj, plural, =0 {} other {# Main Job, }}{ oj, plural, =0 {} other {# Other Job, }}{ ed, plural, =0 {} other {# Educational, }}{ we, plural, =0 {} other {# Work-Eating, }}{ so, plural, =0 {} other {# Socialising, }}{ wna, plural, =0 {} other {# Work No Activity, }}{ wo, plural, =0 {} other {# Work-Other, }}{ gs, plural, =0 {} other {# Grocery Shopping, }}{ os, plural, =0 {} other {# Other Shopping, }}{ swf, plural, =0 {} other {# Socialising with Friends, }}{ orb, plural, =0 {} other {# Other-Reading Book, }}{ eo, plural, =0 {} other {# Eating Out, }}{ oe, plural, =0 {} other {# Other-Exercising, }}{ pec, plural, =0 {} other {# Personal Care, }}{ opc, plural, =0 {} other {# Other Pet Caring, }}{ opg, plural, =0 {} other {# Other-Play Game, }}{ cc, plural, =0 {} other {# Caring for Children, }}{ stf, plural, =0 {} other {# Spending Time with Family, }}{ vw, plural, =0 {} other {# Voluntary Work, }}{ ac, plural, =0 {} other {# Attending Class, }}{ pb, plural, =0 {} other {# Personal Business, }}{ pso, plural, =0 {} other {# Pickup Someone, }}{ pst, plural, =0 {} other {# Pickup Something, }}{ ona, plural, =0 {} other {# Other-No Activity, }}{ oo, plural, =0 {} other {# Other-Other, }}"
+          "en": "{ hed, plural, =0 {} other {# Eating/Drinking, }}{ hph, plural, =0 {} other {# Personal Hygiene, }}{ hs, plural, =0 {} other {# Sleeping, }}{ hm, plural, =0 {} other {# Meditation, }}{ heh, plural, =0 {} other {# Sport at Home, }}{ hopc, plural, =0 {} other {# Other Personal Care, }}{ hlc, plural, =0 {} other {# Laundry/Clothes Care, }}{ hmp, plural, =0 {} other {# Food/Drink Prep, }}{ hog, plural, =0 {} other {# Online Grocery Shopping, }}{ hoh, plural, =0 {} other {# Other Housework, }}{ hpc, plural, =0 {} other {# Grounds/Animal Care, }}{ hhm, plural, =0 {} other {# House Maintenance, }}{ hhmgt, plural, =0 {} other {# Household Management, }}{ hcac, plural, =0 {} other {# Caring Children/Adults, }}{ hvw, plural, =0 {} other {# Voluntary Work/Caring, }}{ hcf, plural, =0 {} other {# Contact Family/Friends, }}{ hcip, plural, =0 {} other {# In-Person Socialising, }}{ hwt, plural, =0 {} other {# Watching TV/Netflix, }}{ hsm, plural, =0 {} other {# Social Media, }}{ hvg, plural, =0 {} other {# Video Games, }}{ hl, plural, =0 {} other {# Listening to Podcasts, }}{ hobh, plural, =0 {} other {# Other Games/Hobbies, }}{ hrb, plural, =0 {} other {# Reading Book, }}{ hoel, plural, =0 {} other {# Online Edu Leisure, }}{ hoos, plural, =0 {} other {# Online Other Shopping, }}{ hft, plural, =0 {} other {# Other Free Time, }}{ hoe, plural, =0 {} other {# Online Edu, }}{ hsu, plural, =0 {} other {# Study for Uni, }}{ hwmj, plural, =0 {} other {# WFH Main Job, }}{ hwoj, plural, =0 {} other {# WFH Other Job, }}{ hwo, plural, =0 {} other {# WFH Other, }}{ hna, plural, =0 {} other {# Just Relaxing, }}{ hot, plural, =0 {} other {# Other, }}{ wmj, plural, =0 {} other {# Main Job, }}{ woj, plural, =0 {} other {# Other Job, }}{ we, plural, =0 {} other {# Edu Courses, }}{ wea, plural, =0 {} other {# Eating/Drinking, }}{ ws, plural, =0 {} other {# Socialising, }}{ wna, plural, =0 {} other {# Just Relaxing, }}{ wo, plural, =0 {} other {# Other, }}{ oea, plural, =0 {} other {# Eating/Drinking, }}{ oph, plural, =0 {} other {# Personal Hygiene, }}{ os, plural, =0 {} other {# Sleeping, }}{ om, plural, =0 {} other {# Meditation, }}{ oei, plural, =0 {} other {# Indoor Sport, }}{ oopc, plural, =0 {} other {# Other Personal Care, }}{ olc, plural, =0 {} other {# Laundry/Clothes Care, }}{ omp, plural, =0 {} other {# Food/Drink Prep, }}{ ogs, plural, =0 {} other {# Grocery Shopping, }}{ oogs, plural, =0 {} other {# Online Grocery Shopping, }}{ opc, plural, =0 {} other {# Grounds/Animal Care, }}{ ocac, plural, =0 {} other {# Caring Children/Adults, }}{ ovw, plural, =0 {} other {# Voluntary Work/Caring, }}{ ocf, plural, =0 {} other {# Contact Family/Friends, }}{ ocip, plural, =0 {} other {# In-Person Socialising, }}{ owt, plural, =0 {} other {# Watching TV/Netflix, }}{ osm, plural, =0 {} other {# Checking Social Media, }}{ ovg, plural, =0 {} other {# Play Video Games, }}{ ol, plural, =0 {} other {# Listening to Podcasts, }}{ ohob, plural, =0 {} other {# Games/Hobbies, }}{ oeo, plural, =0 {} other {# Eating Out/Drinking, }}{ oexo, plural, =0 {} other {# Sport/Outdoor Activity, }}{ orb, plural, =0 {} other {# Reading Book, }}{ oedu, plural, =0 {} other {# Edu Leisure, }}{ ooel, plural, =0 {} other {# Online Edu Leisure, }}{ oosh, plural, =0 {} other {# Other Shopping, }}{ ooosh, plural, =0 {} other {# Online Other Shopping, }}{ oft, plural, =0 {} other {# Free Time, }}{ opb, plural, =0 {} other {# Personal Business, }}{ ops, plural, =0 {} other {# Pick Up Someone, }}{ opst, plural, =0 {} other {# Pick Up Something, }}{ ooe, plural, =0 {} other {# Online Edu, }}{ osu, plural, =0 {} other {# Study for Uni, }}{ omj, plural, =0 {} other {# Main Job, }}{ ooj, plural, =0 {} other {# Other Job, }}{ owo, plural, =0 {} other {# Other Employment, }}{ ona, plural, =0 {} other {# Just Relaxing, }}{ oot, plural, =0 {} other {# Other, }}"
         }
       }
     },
