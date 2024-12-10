@@ -5,6 +5,7 @@
     "connectUrl": "https://emission-app.fourstep.dev/",
     "aggregate_call_auth": "user_only"
   },
+  "name": "Time-use",
   "intro": {
     "program_or_study": "program",
     "start_month": "7",
