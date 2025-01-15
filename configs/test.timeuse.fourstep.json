@@ -620,7 +620,8 @@
     "use_imperial": false
   },
   "metrics": {
-    "include_test_users": true
+    "include_test_users": true,
+    "phone_dashboard_ui": true
   },
   "profile_controls": {
     "support_upload": false,
