@@ -622,7 +622,7 @@
   "metrics": {
     "include_test_users": true,
     "phone_dashboard_ui": {
-      "sections": ["time-use", "footprint", "movement", "surveys", "travel"],
+      "sections": ["timeuse", "footprint", "movement", "surveys", "travel"],
       "metric_list": {
         "footprint": ["mode_confirm"],
         "distance": ["mode_confirm"],
