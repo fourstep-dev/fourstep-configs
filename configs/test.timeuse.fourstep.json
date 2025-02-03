@@ -621,7 +621,15 @@
   },
   "metrics": {
     "include_test_users": true,
-    "phone_dashboard_ui": true
+    "phone_dashboard_ui": {
+      "sections": ["time-use", "footprint", "movement", "surveys", "travel"],
+      "metric_list": {
+        "footprint": ["mode_confirm"],
+        "distance": ["mode_confirm"],
+        "duration": ["mode_confirm"],
+        "count": ["mode_confirm"]
+      }
+    }
   },
   "profile_controls": {
     "support_upload": false,
