@@ -2,7 +2,7 @@
   "version": 1,
   "ts": 1689138715,
   "server": {
-    "connectUrl": "https://emission-app.fourstep.dev/",
+    "connectUrl": "http://134.199.169.217:8080",
     "aggregate_call_auth": "user_only"
   },
   "name": "Time-use-sydney",
