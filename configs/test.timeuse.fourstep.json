@@ -2,7 +2,7 @@
   "version": 1,
   "ts": 1689138715,
   "server": {
-    "connectUrl": "https://emission-app.fourstep.dev/",
+    "connectUrl": "https://server.fourstep.dev/",
     "aggregate_call_auth": "user_only"
   },
   "name": "Time-use",
