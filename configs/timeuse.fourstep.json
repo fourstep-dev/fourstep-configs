@@ -1,202 +1,658 @@
 {
-    "version": 1,
-    "ts": 1689138715,
-    "server": {
-        "connectUrl": "https://emission-app.fourstep.dev/",
-        "aggregate_call_auth": "user_only"
-    },
-    "intro": {
-        "program_or_study": "program",
-        "start_month": "7",
-        "start_year": "2023",
-        "mode_studied": "e-bike",
-        "program_admin_contact": "rCITI (rciti.survey@unsw.edu.au)",
+  "version": 1,
+  "ts": 1689138715,
+  "server": {
+    "connectUrl": "https://server.fourstep.dev/",
+    "aggregate_call_auth": "user_only"
+  },
+  "name": "Time-use",
+  "intro": {
+    "program_or_study": "program",
+    "start_month": "7",
+    "start_year": "2023",
+    "mode_studied": "e-bike",
+    "program_admin_contact": "rCITI (rciti.survey@unsw.edu.au)",
+    "deployment_partner_name": "Fourstep",
+    "translated_text": {
+      "en": {
         "deployment_partner_name": "Fourstep",
-        "translated_text": {
-            "en": {
-                "deployment_partner_name": "Fourstep",
-                "deployment_name": "Time use program",
-                "summary_line_1": "allows real-world testing of the app in time use mode",
-                "summary_line_2": "before pushing changes to production",
-                "summary_line_3": "without any guarantees about retaining data",
-                "short_textual_description": "Dev-ops best practices involve setting up a staging environment to test changes in the real world before they are pushed out to production. This environment is designed for use with staging or beta versions of the OpenPATH. NREL makes no guarantees about data retention on this environment. Please use the Open Access environment to understand your carbon footprint.",
-                "why_we_collect": "To ensure that the end-to-end system works properly on a variety of real-world phones",
-                "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
-            },
-            "es": {
-                "deployment_partner_name": "Fourstep",
-                "deployment_name": "Entorno de ensayo solo para uso del tiempo de prueba",
-                "summary_line_1": "permite realizar pruebas en el mundo real de la aplicación en modo de uso del tiempo",
-                "summary_line_2": "antes de impulsar cambios en la producción",
-                "summary_line_3": "sin ninguna garantía sobre la retención de datos",
-                "short_textual_description": "Las mejores prácticas de Dev-ops implican configurar un entorno de prueba para probar los cambios en el mundo real antes de que se envíen a producción. Este entorno está diseñado para usarse con versiones provisionales o beta de OpenPATH. NREL no garantiza la retención de datos en este entorno. Utilice el entorno de acceso abierto para comprender su huella de carbono.",
-                "why_we_collect_es": "Para garantizar que el sistema de extremo a extremo funcione correctamente en una variedad de teléfonos del mundo real",
-                "why_we_collect": "Para garantizar que el sistema de extremo a extremo funcione correctamente en una variedad de teléfonos del mundo real",
-                "research_questions": ["Comparando el grupo de acceso abierto (sin intervención) y los uso del tiempo que brindan intervenciones.", "Monitoreo general de las tendencias de movilidad para el comportamiento de viaje, incluidos los cambios en el comportamiento de viaje y la introducción de nuevos modos de movilidad."]
-            }
-        }
-    },
-    "survey_info": {
-      "surveys": {
-        "TripConfirmSurvey": {
-          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-confirm-survey-multiple-select.json",
-          "version": 1.2,
-          "compatibleWith": 1,
-          "dataKey": "manual/trip_user_input",
-          "labelVars": {
-            "modes": {
-              "key": "travel_mode",
-              "type": "length"
-            },
-            "purposes": {
-              "key": "destination_purpose",
-              "type": "length"
-            }
-          },
-          "labelTemplate": {
-            "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
-            "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
-          }
-        },
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        },
-        "TimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/timeuse-survey-form.json",
-          "version": 9,
-          "compatibleWith": 1,
-          "labelVars": {
-            "pca": {
-              "key": "personal_care",
-              "type": "length"
-            },
-            "erea": {
-              "key": "employment_and_educational",
-              "type": "length"
-            },
-            "da": {
-              "key": "maintenance",
-              "type": "length"
-            },
-            "ral": {
-              "key": "recreation_and_leisure",
-              "type": "length"
-            },
-            "vwaca": {
-              "key": "voluntary_work_and_care",
-              "type": "length"
-            },
-            "other": {
-              "key": "other",
-              "type": "length"
-            }
-          },
-          "labelTemplate": {
-            "en": "{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Maintenance, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
-            "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
-          }
-        }
+        "deployment_name": "Time-use Program",
+        "summary_line_1": "Collecting time-use data through travel diaries",
+        "summary_line_2": "Providing valuable insights into travel behavior, patterns, and preferences.",
+        "summary_line_3": "This data helps researchers and policymakers understand how individuals allocate their time for various activities",
+        "short_textual_description": "Collecting time-use data in travel diaries is an essential aspect of transport research, providing valuable insights into travel behavior, patterns, and preferences. This data helps researchers and policymakers understand how individuals allocate their time for various activities, including travel, and how different factors influence these choices.",
+        "why_we_collect": "This data offers comprehensive insights into how individuals allocate their time to different activities, providing a deeper understanding of human behavior, societal trends, and resource utilization.",
+        "research_questions": [
+          "How do individuals allocate their time to different modes of transportation (e.g., walking, cycling, driving, public transit)?",
+          "What are the primary purposes of trips (e.g., work, education, shopping, leisure) and how do these purposes influence travel time and mode choice?"
+        ]
       },
-      "buttons": {
-        "trip-notes": {
-          "surveyName": "TimeUseSurvey",
-          "not-filled-in-label": {
-            "en": "Add Activity",
-            "es": "Añadir actividad"
-          }
-        },
-        "place-notes": {
-          "surveyName": "TimeUseSurvey",
-          "not-filled-in-label": {
-            "en": "Add Activity",
-            "es": "Añadir actividad"
-          }
-        }
-      },
-      "trip-labels": "ENKETO"
-    },
-    "reminderSchemes": {
-        "weekly": {
-            "title": {
-                "en": "Please take a moment to label your trips",
-                "es": "Por favor, tómese un momento para etiquetar sus viajes"
-            },
-            "text": {
-                "en": "Click to open the app and view unlabeled trips",
-                "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
-            },
-            "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
-            ],
-            "defaultTime": "21:00"
-        },
-        "week-quarterly": {
-            "title": {
-                "en": "Please take a moment to label your trips",
-                "es": "Por favor, tómese un momento para etiquetar sus viajes"
-            },
-            "text": {
-                "en": "Click to open the app and view unlabeled trips",
-                "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
-            },
-            "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
-            ],
-            "defaultTime": "22:00"
-        },
-        "passive": {
-            "title": {
-                "en": "Please take a moment to label your trips",
-                "es": "Por favor, tómese un momento para etiquetar sus viajes"
-            },
-            "text": {
-                "en": "Click to open the app and view unlabeled trips",
-                "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
-            },
-            "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
-            ],
-            "defaultTime": "23:00"
-        }
-    },
-    "display_config": {
-        "use_imperial": false
-    },
-    "metrics": {
-        "include_test_users": true
-    },
-    "profile_controls": {
-        "support_upload": false,
-        "trip_end_notification": false
-    },
-    "admin_dashboard": {
-        "overview_users": true,
-        "overview_active_users": true,
-        "overview_trips": true,
-        "overview_signup_trends": true,
-        "overview_trips_trend": true,
-        "data_uuids": true,
-        "data_trips": true,
-        "data_trips_columns_exclude": [],
-        "additional_trip_columns": [],
-        "data_uuids_columns_exclude": [],
-        "token_generate": true,
-        "token_prefix": "fourstep",
-        "map_heatmap": true,
-        "map_bubble": true,
-        "map_trip_lines": true,
-        "push_send": true,
-        "options_uuids": true,
-        "options_emails": true
+      "es": {
+        "deployment_partner_name": "Fourstep",
+        "deployment_name": "Time-use Program",
+        "summary_line_1": "permite realizar pruebas en el mundo real de la aplicación en modo de uso del tiempo",
+        "summary_line_2": "antes de impulsar cambios en la producción",
+        "summary_line_3": "sin ninguna garantía sobre la retención de datos",
+        "short_textual_description": "Las mejores prácticas de Dev-ops implican configurar un entorno de prueba para probar los cambios en el mundo real antes de que se envíen a producción. Este entorno está diseñado para usarse con versiones provisionales o beta de OpenPATH. NREL no garantiza la retención de datos en este entorno. Utilice el entorno de acceso abierto para comprender su huella de carbono.",
+        "why_we_collect_es": "Para garantizar que el sistema de extremo a extremo funcione correctamente en una variedad de teléfonos del mundo real",
+        "why_we_collect": "Para garantizar que el sistema de extremo a extremo funcione correctamente en una variedad de teléfonos del mundo real",
+        "research_questions": [
+          "Comparando el grupo de acceso abierto (sin intervención) y los uso del tiempo que brindan intervenciones.",
+          "Monitoreo general de las tendencias de movilidad para el comportamiento de viaje, incluidos los cambios en el comportamiento de viaje y la introducción de nuevos modos de movilidad."
+        ]
+      }
     }
+  },
+  "survey_info": {
+    "surveys": {
+      "TripConfirmSurvey": {
+        "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-confirm-survey-multiple-select.json",
+        "version": 1.2,
+        "compatibleWith": 1,
+        "dataKey": "manual/trip_user_input",
+        "labelVars": {
+          "modes": {
+            "key": "travel_mode",
+            "type": "length"
+          },
+          "purposes": {
+            "key": "destination_purpose",
+            "type": "length"
+          }
+        },
+        "labelTemplate": {
+          "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
+          "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
+        }
+      },
+      "UserProfileSurvey": {
+        "formPath": "json/demo-survey-v2.json",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/demographic_survey",
+        "labelTemplate": {
+          "en": "Answered",
+          "es": "Contestada"
+        }
+      },
+      "TripTimeUseSurvey": {
+        "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/trip-time-use-ok-removed.json",
+        "version": 1.1,
+        "compatibleWith": 1,
+        "labelVars": {
+          "sm": {
+            "key": "social_media",
+            "type": "length",
+            "label": "Social Media"
+          },
+          "cpe": {
+            "key": "checking_p_email",
+            "type": "length",
+            "label": "Personal Email"
+          },
+          "r": {
+            "key": "reading",
+            "type": "length",
+            "label": "Reading"
+          },
+          "m": {
+            "key": "music",
+            "type": "length",
+            "label": "Music"
+          },
+          "pg": {
+            "key": "play_game",
+            "type": "length",
+            "label": "Games"
+          },
+          "wm": {
+            "key": "watching_movie",
+            "type": "length",
+            "label": "Movies"
+          },
+          "lae": {
+            "key": "learning_and_educational",
+            "type": "length",
+            "label": "Learning"
+          },
+          "p": {
+            "key": "phone",
+            "type": "length",
+            "label": "Calls"
+          },
+          "soc": {
+            "key": "socialise",
+            "type": "length",
+            "label": "Socialise"
+          },
+          "ttp": {
+            "key": "talk_to_passengers",
+            "type": "length",
+            "label": "Talk to Passengers"
+          },
+          "wd": {
+            "key": "walking_dog",
+            "type": "length",
+            "label": "Dog Walk"
+          },
+          "e": {
+            "key": "exercising",
+            "type": "length",
+            "label": "Exercise"
+          },
+          "s": {
+            "key": "sleeping",
+            "type": "length",
+            "label": "Sleep"
+          },
+          "ea": {
+            "key": "eating",
+            "type": "length",
+            "label": "Eating"
+          },
+          "we": {
+            "key": "checking_emails",
+            "type": "length",
+            "label": "Work Emails"
+          },
+          "wmt": {
+            "key": "working_main_trip",
+            "type": "length",
+            "label": "Main Job"
+          },
+          "wot": {
+            "key": "working_other_trip",
+            "type": "length",
+            "label": "Other Job"
+          },
+          "c": {
+            "key": "caring",
+            "type": "length",
+            "label": "Caring"
+          },
+          "na": {
+            "key": "no_activity",
+            "type": "length",
+            "label": "No Activity"
+          },
+          "o": {
+            "key": "other",
+            "type": "length",
+            "label": "Other"
+          }
+        },
+        "labelTemplate": {
+          "en": "{ sm, plural, =0 {} other {# Social Media, }}{ cpe, plural, =0 {} other {# Personal Email, }}{ r, plural, =0 {} other {# Reading, }}{ m, plural, =0 {} other {# Music, }}{ pg, plural, =0 {} other {# Games, }}{ wm, plural, =0 {} other {# Movies, }}{ lae, plural, =0 {} other {# Learning, }}{ p, plural, =0 {} other {# Calls, }}{ soc, plural, =0 {} other {# Socialise, }}{ ttp, plural, =0 {} other {# Talk to Passengers, }}{ wd, plural, =0 {} other {# Dog Walk, }}{ e, plural, =0 {} other {# Exercise, }}{ s, plural, =0 {} other {# Sleep, }}{ ea, plural, =0 {} other {# Eating, }}{ we, plural, =0 {} other {# Work Emails, }}{ wmt, plural, =0 {} other {# Main Job, }}{ wot, plural, =0 {} other {# Other Job, }}{ c, plural, =0 {} other {# Caring, }}{ na, plural, =0 {} other {# No Activity, }}{ o, plural, =0 {} other {# Other} }"
+        }
+      },
+      "PlaceTimeUseSurvey": {
+        "formPath": "https://raw.githubusercontent.com/fourstep-dev/fourstep-configs/survey-info/survey-resources/data-json/place-time-use-ok-removed.json",
+        "version": 1.1,
+        "compatibleWith": 1,
+        "labelVars": {
+          "hed": {
+            "key": "h_eating",
+            "type": "length",
+            "label": "Eating/Drinking"
+          },
+          "hph": {
+            "key": "h_personal_hygiene",
+            "type": "length",
+            "label": "Personal Hygiene"
+          },
+          "hs": {
+            "key": "h_sleeping",
+            "type": "length",
+            "label": "Sleeping"
+          },
+          "hm": {
+            "key": "h_meditation",
+            "type": "length",
+            "label": "Meditation"
+          },
+          "heh": {
+            "key": "h_exercising",
+            "type": "length",
+            "label": "Sport at Home"
+          },
+          "hgr": {
+            "key": "h_getting_ready",
+            "type": "length",
+            "label": "Getting Ready"
+          },
+          "hopc": {
+            "key": "h_other_personal_care",
+            "type": "length",
+            "label": "Other Personal Care"
+          },
+          "hlc": {
+            "key": "h_laundry",
+            "type": "length",
+            "label": "Laundry/Clothes Care"
+          },
+          "hmp": {
+            "key": "h_meal_preparation",
+            "type": "length",
+            "label": "Food/Drink Prep"
+          },
+          "hog": {
+            "key": "h_online_grocery_shopping",
+            "type": "length",
+            "label": "Online Grocery Shopping"
+          },
+          "hoh": {
+            "key": "h_housework",
+            "type": "length",
+            "label": "Other Housework"
+          },
+          "hpc": {
+            "key": "h_pet_caring",
+            "type": "length",
+            "label": "Grounds/Animal Care"
+          },
+          "hhm": {
+            "key": "h_house_maintenance",
+            "type": "length",
+            "label": "House Maintenance"
+          },
+          "hhmgt": {
+            "key": "h_hh_management",
+            "type": "length",
+            "label": "Household Management"
+          },
+          "hcac": {
+            "key": "h_children_adult_caring",
+            "type": "length",
+            "label": "Caring Children/Adults"
+          },
+          "hvw": {
+            "key": "h_voluntary_work",
+            "type": "length",
+            "label": "Voluntary Work/Caring"
+          },
+          "hcf": {
+            "key": "h_contact",
+            "type": "length",
+            "label": "Contact Family/Friends"
+          },
+          "hcip": {
+            "key": "h_contact_inperson",
+            "type": "length",
+            "label": "In-Person Socialising"
+          },
+          "hwt": {
+            "key": "h_watching_tv",
+            "type": "length",
+            "label": "Watching TV/Netflix"
+          },
+          "hsm": {
+            "key": "h_social_media",
+            "type": "length",
+            "label": "Social Media"
+          },
+          "hvg": {
+            "key": "h_play_video_game",
+            "type": "length",
+            "label": "Video Games"
+          },
+          "hl": {
+            "key": "h_listening",
+            "type": "length",
+            "label": "Listening to Podcasts"
+          },
+          "hobh": {
+            "key": "h_hobbies",
+            "type": "length",
+            "label": "Other Games/Hobbies"
+          },
+          "hrb": {
+            "key": "h_reading_book",
+            "type": "length",
+            "label": "Reading Book"
+          },
+          "hoel": {
+            "key": "h_online_edu_leisure",
+            "type": "length",
+            "label": "Online Edu Leisure"
+          },
+          "hoos": {
+            "key": "h_online_other_shopping",
+            "type": "length",
+            "label": "Online Other Shopping"
+          },
+          "hft": {
+            "key": "h_free_time",
+            "type": "length",
+            "label": "Other Free Time"
+          },
+          "hoe": {
+            "key": "h_online_edu",
+            "type": "length",
+            "label": "Online Edu"
+          },
+          "hsu": {
+            "key": "h_studying_for_uni",
+            "type": "length",
+            "label": "Study for Uni"
+          },
+          "hwmj": {
+            "key": "h_wfh_main_job",
+            "type": "length",
+            "label": "WFH Main Job"
+          },
+          "hwoj": {
+            "key": "h_wfh_other_job",
+            "type": "length",
+            "label": "WFH Other Job"
+          },
+          "hwo": {
+            "key": "h_wfh_other",
+            "type": "length",
+            "label": "WFH Other"
+          },
+          "hna": {
+            "key": "h_no_activity",
+            "type": "length",
+            "label": "Just Relaxing"
+          },
+          "hot": {
+            "key": "h_other",
+            "type": "length",
+            "label": "Other"
+          },
+          "wmj": {
+            "key": "w_main_job",
+            "type": "length",
+            "label": "Main Job"
+          },
+          "woj": {
+            "key": "w_other_job",
+            "type": "length",
+            "label": "Other Job"
+          },
+          "we": {
+            "key": "w_edu",
+            "type": "length",
+            "label": "Edu Courses"
+          },
+          "wea": {
+            "key": "w_eating",
+            "type": "length",
+            "label": "Eating/Drinking"
+          },
+          "ws": {
+            "key": "w_socialising",
+            "type": "length",
+            "label": "Socialising"
+          },
+          "wna": {
+            "key": "w_no_activity",
+            "type": "length",
+            "label": "Just Relaxing"
+          },
+          "wo": {
+            "key": "w_other",
+            "type": "length",
+            "label": "Other"
+          },
+          "oea": {
+            "key": "o_eating",
+            "type": "length",
+            "label": "Eating/Drinking"
+          },
+          "oph": {
+            "key": "o_personal_hygiene",
+            "type": "length",
+            "label": "Personal Hygiene"
+          },
+          "os": {
+            "key": "o_sleeping",
+            "type": "length",
+            "label": "Sleeping"
+          },
+          "om": {
+            "key": "o_meditation",
+            "type": "length",
+            "label": "Meditation"
+          },
+          "oei": {
+            "key": "o_exercising",
+            "type": "length",
+            "label": "Indoor Sport"
+          },
+          "oopc": {
+            "key": "o_other_personal_care",
+            "type": "length",
+            "label": "Other Personal Care"
+          },
+          "olc": {
+            "key": "o_laundry",
+            "type": "length",
+            "label": "Laundry/Clothes Care"
+          },
+          "omp": {
+            "key": "o_meal_preparation",
+            "type": "length",
+            "label": "Food/Drink Prep"
+          },
+          "ogs": {
+            "key": "o_grocery_shopping",
+            "type": "length",
+            "label": "Grocery Shopping"
+          },
+          "oogs": {
+            "key": "o_online_grocery_shopping",
+            "type": "length",
+            "label": "Online Grocery Shopping"
+          },
+          "opc": {
+            "key": "o_pet_caring",
+            "type": "length",
+            "label": "Grounds/Animal Care"
+          },
+          "ocac": {
+            "key": "o_children_adult_caring",
+            "type": "length",
+            "label": "Caring Children/Adults"
+          },
+          "ovw": {
+            "key": "o_voluntary_work",
+            "type": "length",
+            "label": "Voluntary Work/Caring"
+          },
+          "ocf": {
+            "key": "o_contact",
+            "type": "length",
+            "label": "Contact Family/Friends"
+          },
+          "ocip": {
+            "key": "o_contact_inperson",
+            "type": "length",
+            "label": "In-Person Socialising"
+          },
+          "owt": {
+            "key": "o_watching_tv",
+            "type": "length",
+            "label": "Watching TV/Netflix"
+          },
+          "osm": {
+            "key": "o_social_media",
+            "type": "length",
+            "label": "Checking Social Media"
+          },
+          "ovg": {
+            "key": "o_play_video_game",
+            "type": "length",
+            "label": "Play Video Games"
+          },
+          "ol": {
+            "key": "o_listening",
+            "type": "length",
+            "label": "Listening to Podcasts"
+          },
+          "ohob": {
+            "key": "o_hobbies",
+            "type": "length",
+            "label": "Games/Hobbies"
+          },
+          "oeo": {
+            "key": "o_eating_out",
+            "type": "length",
+            "label": "Eating Out/Drinking"
+          },
+          "oexo": {
+            "key": "o_exercising_outdoor",
+            "type": "length",
+            "label": "Sport/Outdoor Activity"
+          },
+          "orb": {
+            "key": "o_reading_book",
+            "type": "length",
+            "label": "Reading Book"
+          },
+          "oedu": {
+            "key": "o_edu_leisure",
+            "type": "length",
+            "label": "Edu Leisure"
+          },
+          "ooel": {
+            "key": "o_online_edu_leisure",
+            "type": "length",
+            "label": "Online Edu Leisure"
+          },
+          "oosh": {
+            "key": "o_other_shopping",
+            "type": "length",
+            "label": "Other Shopping"
+          },
+          "ooosh": {
+            "key": "o_online_other_shopping",
+            "type": "length",
+            "label": "Online Other Shopping"
+          },
+          "oft": {
+            "key": "o_free_time",
+            "type": "length",
+            "label": "Free Time"
+          },
+          "opb": {
+            "key": "o_personal_business",
+            "type": "length",
+            "label": "Personal Business"
+          },
+          "ops": {
+            "key": "o_pickup_someone",
+            "type": "length",
+            "label": "Pick Up Someone"
+          },
+          "opst": {
+            "key": "o_pickup_something",
+            "type": "length",
+            "label": "Pick Up Something"
+          },
+          "ooe": {
+            "key": "o_online_edu",
+            "type": "length",
+            "label": "Online Edu"
+          },
+          "osu": {
+            "key": "o_studying_for_uni",
+            "type": "length",
+            "label": "Study for Uni"
+          },
+          "omj": {
+            "key": "o_main_job",
+            "type": "length",
+            "label": "Main Job"
+          },
+          "ooj": {
+            "key": "o_other_job",
+            "type": "length",
+            "label": "Other Job"
+          },
+          "owo": {
+            "key": "o_work_other",
+            "type": "length",
+            "label": "Other Employment"
+          },
+          "ona": {
+            "key": "o_no_activity",
+            "type": "length",
+            "label": "Just Relaxing"
+          },
+          "oot": {
+            "key": "o_other",
+            "type": "length",
+            "label": "Other"
+          }
+        },
+        "labelTemplate": {
+          "en": "{ hed, plural, =0 {} other {# Eating/Drinking, }}{ hph, plural, =0 {} other {# Personal Hygiene, }}{ hs, plural, =0 {} other {# Sleeping, }}{ hm, plural, =0 {} other {# Meditation, }}{ heh, plural, =0 {} other {# Sport at Home, }}{ hgr, plural, =0 {} other {# Getting Ready, }}{ hopc, plural, =0 {} other {# Other Personal Care, }}{ hlc, plural, =0 {} other {# Laundry/Clothes Care, }}{ hmp, plural, =0 {} other {# Food/Drink Prep, }}{ hog, plural, =0 {} other {# Online Grocery Shopping, }}{ hoh, plural, =0 {} other {# Other Housework, }}{ hpc, plural, =0 {} other {# Grounds/Animal Care, }}{ hhm, plural, =0 {} other {# House Maintenance, }}{ hhmgt, plural, =0 {} other {# Household Management, }}{ hcac, plural, =0 {} other {# Caring Children/Adults, }}{ hvw, plural, =0 {} other {# Voluntary Work/Caring, }}{ hcf, plural, =0 {} other {# Contact Family/Friends, }}{ hcip, plural, =0 {} other {# In-Person Socialising, }}{ hwt, plural, =0 {} other {# Watching TV/Netflix, }}{ hsm, plural, =0 {} other {# Social Media, }}{ hvg, plural, =0 {} other {# Video Games, }}{ hl, plural, =0 {} other {# Listening to Podcasts, }}{ hobh, plural, =0 {} other {# Other Games/Hobbies, }}{ hrb, plural, =0 {} other {# Reading Book, }}{ hoel, plural, =0 {} other {# Online Edu Leisure, }}{ hoos, plural, =0 {} other {# Online Other Shopping, }}{ hft, plural, =0 {} other {# Other Free Time, }}{ hoe, plural, =0 {} other {# Online Edu, }}{ hsu, plural, =0 {} other {# Study for Uni, }}{ hwmj, plural, =0 {} other {# WFH Main Job, }}{ hwoj, plural, =0 {} other {# WFH Other Job, }}{ hwo, plural, =0 {} other {# WFH Other, }}{ hna, plural, =0 {} other {# Just Relaxing, }}{ hot, plural, =0 {} other {# Other, }}{ wmj, plural, =0 {} other {# Main Job, }}{ woj, plural, =0 {} other {# Other Job, }}{ we, plural, =0 {} other {# Edu Courses, }}{ wea, plural, =0 {} other {# Eating/Drinking, }}{ ws, plural, =0 {} other {# Socialising, }}{ wna, plural, =0 {} other {# Just Relaxing, }}{ wo, plural, =0 {} other {# Other, }}{ oea, plural, =0 {} other {# Eating/Drinking, }}{ oph, plural, =0 {} other {# Personal Hygiene, }}{ os, plural, =0 {} other {# Sleeping, }}{ om, plural, =0 {} other {# Meditation, }}{ oei, plural, =0 {} other {# Indoor Sport, }}{ oopc, plural, =0 {} other {# Other Personal Care, }}{ olc, plural, =0 {} other {# Laundry/Clothes Care, }}{ omp, plural, =0 {} other {# Food/Drink Prep, }}{ ogs, plural, =0 {} other {# Grocery Shopping, }}{ oogs, plural, =0 {} other {# Online Grocery Shopping, }}{ opc, plural, =0 {} other {# Grounds/Animal Care, }}{ ocac, plural, =0 {} other {# Caring Children/Adults, }}{ ovw, plural, =0 {} other {# Voluntary Work/Caring, }}{ ocf, plural, =0 {} other {# Contact Family/Friends, }}{ ocip, plural, =0 {} other {# In-Person Socialising, }}{ owt, plural, =0 {} other {# Watching TV/Netflix, }}{ osm, plural, =0 {} other {# Checking Social Media, }}{ ovg, plural, =0 {} other {# Play Video Games, }}{ ol, plural, =0 {} other {# Listening to Podcasts, }}{ ohob, plural, =0 {} other {# Games/Hobbies, }}{ oeo, plural, =0 {} other {# Eating Out/Drinking, }}{ oexo, plural, =0 {} other {# Sport/Outdoor Activity, }}{ orb, plural, =0 {} other {# Reading Book, }}{ oedu, plural, =0 {} other {# Edu Leisure, }}{ ooel, plural, =0 {} other {# Online Edu Leisure, }}{ oosh, plural, =0 {} other {# Other Shopping, }}{ ooosh, plural, =0 {} other {# Online Other Shopping, }}{ oft, plural, =0 {} other {# Free Time, }}{ opb, plural, =0 {} other {# Personal Business, }}{ ops, plural, =0 {} other {# Pick Up Someone, }}{ opst, plural, =0 {} other {# Pick Up Something, }}{ ooe, plural, =0 {} other {# Online Edu, }}{ osu, plural, =0 {} other {# Study for Uni, }}{ omj, plural, =0 {} other {# Main Job, }}{ ooj, plural, =0 {} other {# Other Job, }}{ owo, plural, =0 {} other {# Other Employment, }}{ ona, plural, =0 {} other {# Just Relaxing, }}{ oot, plural, =0 {} other {# Other, }}"
+        }
+      }
+    },
+    "buttons": {
+      "trip-notes": {
+        "surveyName": "TripTimeUseSurvey",
+        "not-filled-in-label": {
+          "en": "Add Activity",
+          "es": "Añadir actividad"
+        }
+      },
+      "place-notes": {
+        "surveyName": "PlaceTimeUseSurvey",
+        "not-filled-in-label": {
+          "en": "Add Activity",
+          "es": "Añadir actividad"
+        }
+      },
+      "trip-label": {
+        "surveyName": "TripConfirmSurvey",
+        "not-filled-in-label": {
+          "en": "Add Trip Details",
+          "es": "Añadir viaje"
+        }
+      }
+    },
+    "trip-labels": "ENKETO"
+  },
+  "display_config": {
+    "use_imperial": false
+  },
+  "metrics": {
+    "include_test_users": true,
+    "phone_dashboard_ui": {
+      "sections": ["timeuse", "footprint", "movement", "surveys", "travel"],
+      "metric_list": {
+        "footprint": ["mode_confirm"],
+        "distance": ["mode_confirm"],
+        "duration": ["mode_confirm"],
+        "count": ["mode_confirm"]
+      }
+    }
+  },
+  "profile_controls": {
+    "support_upload": false,
+    "trip_end_notification": false
+  },
+  "admin_dashboard": {
+    "overview_users": true,
+    "overview_active_users": true,
+    "overview_trips": true,
+    "overview_signup_trends": true,
+    "overview_trips_trend": true,
+    "data_uuids": true,
+    "data_trips": true,
+    "data_trips_columns_exclude": [],
+    "additional_trip_columns": [],
+    "data_uuids_columns_exclude": [],
+    "token_generate": true,
+    "token_prefix": "fourstep",
+    "map_heatmap": true,
+    "map_bubble": true,
+    "map_trip_lines": true,
+    "push_send": true,
+    "options_uuids": true,
+    "options_emails": true
+  }
 }
