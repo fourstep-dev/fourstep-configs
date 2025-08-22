@@ -1,8 +1,9 @@
 {
+  "url_abbreviation": "timeuse",
   "version": 1,
   "ts": 1689138715,
   "server": {
-    "connectUrl": "http://134.199.169.217:8080",
+    "connectUrl": "https://server.fourstep.dev/",
     "aggregate_call_auth": "user_only"
   },
   "name": "Time-use-sydney",
